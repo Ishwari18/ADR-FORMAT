@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: bold;
+  src: url(fonts/THEBOLDFONT\ 2022.otf);
+}
+.navabar {
+  position: relative;
+  width: 2000px;
+  height: 60px;
+  position: fixed;
+  z-index: +60;
+}
+.navblack {
+  color: black;
+}
+.container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.lg {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 30px;
+}
+.menu {
+  display: flex;
+  position: relative;
+  left: 1000px;
+  bottom: 50px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 30px;
+  font-size: 20px;
+  font-family: bold;
+}
+.first {
+  height: 100vh;
+  width: screen;
+  overflow: hidden;
+  scroll-snap-align: start;
+  overflow-y: hidden;
+}
+.mainvid {
+  position: relative;
+  bottom: 200px;
+  z-index: -10;
+}
+.tw {
+  width: screen;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  text-align: center;
+  overflow-y: hidden;
+  scroll-snap-align: start;
+}
+.ws {
+  height: 100vh;
+  width: screen;
+}
+.scenes {
+  height: 100vh;
+  width: screen;
+}
+.w {
+  font-size: 100px;
+  color: white;
+  overflow-y: hidden;
+  font-family: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.w1 {
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+.w2 {
+  position: relative;
+  top: 240px;
+  right: 200px;
+}
+.w3 {
+  position: relative;
+  top: 240px;
+  left: 160px;
+}
+.w4 {
+  position: relative;
+  top: 380px;
+  right: 850px;
+}
+.w5 {
+  position: relative;
+  top: 270px;
+  left: 620px;
+}
+.w6 {
+  position: relative;
+  top: 410px;
+  left: 100px;
+}
+.scene {
+  z-index: +100;
+}
+.scene1 {
+  background-color: rgba(241, 207, 166, 0.872);
+  width: 350px;
+  height: 150px;
+  position: relative;
+  z-index: +300;
+  bottom: 660px;
+  left: 870px;
+  overflow: hidden;
+}
+.scene1img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.scene2 {
+  background-color: rgb(227, 255, 196);
+  width: 240px;
+  height: 140px;
+  position: relative;
+  z-index: +300;
+  bottom: 650px;
+  overflow: hidden;
+  left: 195px;
+}
+.scene2img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.scene3 {
+  background-color: rgb(196, 219, 255);
+  width: 320px;
+  height: 260px;
+  position: relative;
+  left: 666px;
+  bottom: 787px;
+  z-index: +300;
+  overflow: hidden;
+}
+.scene3img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+.scene4 {
+  background-color: rgb(209, 162, 227);
+  width: 470px;
+  height: 150px;
+  position: relative;
+  left: 240px;
+  bottom: 760px;
+  z-index: +300;
+  overflow: hidden;
+}
+.scene4img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.third {
+  height: 1000px;
+  background-color: rgb(30, 30, 30);
+  width: screen;
+  overflow-y: hidden;
+  transition: 0.8s;
+  text-align: center;
+  scroll-snap-align: center;
+}
+.third h1 {
+  font-size: 86px;
+  color: white;
+  position: relative;
+  top: 38px;
+  margin: auto;
+  font-family: bold;
+  text-transform: uppercase;
+}
+.set {
+  width: 94%;
+  margin: 20px auto;
+  display: flex;
+  position: relative;
+  height: 680px;
+  top: 70px;
+  scroll-snap-align: center;
+}
+.vid {
+  transition: 0.8s;
+  z-index: +10;
+  overflow-y: hidden;
+  font-family: bold;
+}
+#artisthead {
+  color: white;
+  text-decoration: none;
+}
+#artisthead a {
+  color: white;
+  text-decoration: none;
+}
+.fntscaleup {
+  transform: scale(1.3);
+}
+.fntscaledwn {
+  transform: scale(1.3);
+}
+#a {
+  position: relative;
+  margin: 5px auto;
+  top: 30px;
+  flex: 1;
+  height: 560px;
+}
+#ahead {
+  color: white;
+  transition: 0.8s;
+  font-size: 30px;
+}
+#a:hover {
+  flex: 6;
+  transform: scaleY(1.2);
+}
+.red {
+  background-color: rgba(220, 20, 60, 0.601);
+}
+#b {
+  position: relative;
+  margin: 5px 5px;
+  top: 10px;
+  flex: 1;
+  height: 610px;
+}
+#bhead {
+  color: white;
+  transition: 0.8s;
+  font-size: 30px;
+}
+.blue {
+  background-color: rgba(56, 113, 235, 0.991);
+}
+#b:hover {
+  flex: 6;
+  transform: scaleY(1.1);
+}
+#c {
+  position: relative;
+  margin: 5px auto;
+  flex: 1;
+  top: 30px;
+  height: 560px;
+}
+#chead {
+  color: white;
+  transition: 0.8s;
+  font-size: 30px;
+}
+#c:hover {
+  flex: 6;
+  transform: scaleY(1.2);
+}
+.green {
+  background-color: rgba(137, 30, 214, 0.67);
+}
+#a video {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+#b video {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+#c video {
+  width: 100%;
+  height: 88%;
+  object-fit: cover;
+}
+.strip {
+  width: screen;
+  height: 50px;
+  background-color: rgb(255, 247, 129);
+  border-bottom: 4px black;
+  border-top: 4px black;
+  overflow: hidden;
+  text-align: center;
+}
+.strip span {
+  margin: 0px auto;
+  font-size: 30px;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+}
+.upper {
+  background: black;
+  height: 2px;
+  width: screen;
+  position: relative;
+}
+.lwer {
+  background: black;
+  height: 2px;
+  width: screen;
+  position: relative;
+  top: 47px;
+}
+.four {
+  width: screen;
+  height: 100vh;
+  background-color: black;
+  scroll-snap-align: start;
+  text-align: center;
+}
+.four h1 {
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  position: relative;
+  top: 70px;
+  font-family: bold;
+}
+.artset {
+  width: 84%;
+  margin: 20px auto;
+  display: flex;
+  position: relative;
+  top: 60px;
+  height: 460px;
+}
+.artist {
+  background-color: rgba(213, 243, 197, 0.979);
+  background-color: rgba(157, 195, 137, 0.979);
+  border: 2px solid rgb(134, 183, 134);
+  transition: 0.3s;
+  z-index: +10;
+  overflow-y: hidden;
+  flex: 1;
+  margin: 14px;
+}
+
+#firstartist {
+  background-color: rgba(112, 154, 245, 0.991);
+}
+#firstartist:hover {
+  background-color: rgba(213, 243, 254, 0.991);
+}
+#firstartist img {
+  width: 500px;
+  position: relative;
+  bottom: 300px;
+  transition: 0.8s;
+  z-index: -10;
+}
+#scndartist {
+  background-color: rgb(241, 172, 119);
+}
+#scndartist:hover {
+  background-color: rgb(255, 226, 203);
+}
+#thirdartist {
+  background-color: rgba(167, 223, 139, 0.979);
+}
+#thirdartist:hover {
+  background-color: rgba(225, 245, 215, 0.979);
+}
+#scndartist img {
+  width: 630px;
+  position: relative;
+  transition: 0.8s;
+  z-index: -10;
+  top: 10px;
+}
+#thirdartist img {
+  width: 760px;
+  position: relative;
+  transition: 0.8s;
+  z-index: -10;
+  right: 160px;
+}
+.fifth {
+  color: white;
+  width: screen;
+  height: 80vh;
+  background-color: rgba(227, 31, 198, 0.751);
+  scroll-snap-align: end;
+  overflow: hidden;
+}
+.fifth h1 {
+  font-size: 70px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-family: bold;
+  text-transform: uppercase;
+}
+.fifth p {
+  text-align: left;
+  width: 680px;
+  position: relative;
+  font-size: 20px;
+  top: 50px;
+  left: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+.form {
+  position: relative;
+  left: 780px;
+  bottom: 200px;
+  font-family: bold;
+  padding: 20px;
+}
+.form label {
+  font-size: 20px;
+  position: relative;
+  left: 6px;
+  margin-top: 10px;
+}
+.form input {
+  width: 300px;
+  height: 26px;
+  text-decoration: none;
+  border-radius: 15px;
+  margin: 5px 0px;
+  border: none;
+  font-family: "Roboto Mono", monospace;
+}
+.liscence {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  bottom: 88px;
+  text-align: center;
+}
+.links {
+  margin: auto;
+  position: relative;
+  left: 720px;
+  bottom: 76px;
+}
+.email {
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+
+.insta img {
+  width: 30px;
+}
+.yt img {
+  width: 30px;
+}
+.submit {
+  width: 130px;
+  border: 2px rgb(163, 0, 139);
+  border-radius: 20px;
+  background-color: white;
+  font-family: bold;
+  color: rgba(227, 31, 198, 0.751);
+  padding: 8px 0px;
+  margin-top: 10px;
+  font-size: 20px;
+  z-index: +10;
+}
+.submit:hover {
+  transform: scale(1.1);
+}

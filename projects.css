@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: bold;
+  src: url(fonts/THEBOLDFONT\ 2022.otf);
+}
+.container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  scroll-snap-type: x mandatory ;
+  height: 100vh;
+}
+.navabar {
+  position: fixed;
+  display: flex;
+  z-index: +100;
+  width: 2000px;
+  height: 60px;
+  z-index: +60;
+  text-decoration: none;
+}
+.lg {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  z-index: +100;
+}
+.menu {
+  display: flex;
+  position: relative;
+  z-index: +100;
+  left: 980px;
+  top: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 30px;
+  font-size: 20px;
+  z-index: +100;
+  font-family: bold;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 270px;
+  width: 800px;
+}
+.content h1 {
+  font-size: 50px;
+}
+#a {
+  box-shadow: 1000px;
+  position: relative;
+  z-index: +60;
+  overflow-y: hidden;
+  width: 1300px;
+  height: auto;
+  bottom: 180px;
+  right: 240px;
+}
+#b {
+  box-shadow: 1000px;
+  position: relative;
+  z-index: +60;
+  overflow-y: hidden;
+  width: auto;
+  height: 550px;
+  width: 1300px;
+  bottom: 180px;
+  right: 240px;
+}
+#c {
+  box-shadow: 1000px;
+  position: relative;
+  z-index: +60;
+  overflow-y: hidden;
+  width: auto;
+  height: 550px;
+  width: 1300px;
+  bottom: 180px;
+  right: 240px;
+
+}
+#a video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#b video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#c video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container section {
+  min-width: 100%;
+  height: auto;
+  justify-content: center;
+  height: 100vh;
+}
+.first {
+  background-color: #ff5757;
+  justify-content: center;
+}
+.second {
+  background-color: #5271ff;
+  scroll-snap-align: center;
+}
+.third {
+  background-color: rgba(174, 84, 237, 0.863);
+  justify-content: center;
+  scroll-snap-align: center;
+}
+
+
+
+.video-player {
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+.video {
+  width: 100%;
+  display: block;
+}
+.volume {
+  display: none;
+}
+.player-controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  transition: 0.3s;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.6);
+}
+.video-player:hover .player-controls {
+  transform: translateY(0);
+}
+.play-button {
+  width: 10%;
+  display: inline;
+  position: relative;
+  right:588px;
+  top: 6px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+}
+.mutebtn {
+  display: inline-block;
+  position: relative;
+  left: 40px;
+  bottom: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+.play-button:focus {
+  outline: none;
+}
+.time {
+  font-size: 1em;
+  color: white;
+  width: 15%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-progress {
+  position: relative;
+  top: 20px;
+  left: 70px;
+  display: flex;
+  width: 90%;
+  height: 1px;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.video-progress-filled {
+  width: 0;
+  background: rgb(234, 77, 20);
+}
+
+.video-player:hover .video-progress {
+  height: 5px;
+}
+

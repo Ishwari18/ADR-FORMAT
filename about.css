@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+  overflow-x: hidden;
+  background-color: black;
+  overflow: hidden;
+  align-content: center;
+}
+@font-face {
+  font-family: bold;
+  src: url(fonts/THEBOLDFONT\ 2022.otf);
+}
+.navabar {
+  position: relative;
+  width: 2000px;
+  height: 60px;
+  position: fixed;
+}
+.container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.lg {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 30px;
+}
+.menu {
+  display: flex;
+  position: relative;
+  left: 1000px;
+  bottom: 50px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0px 30px;
+  font-size: 20px;
+  font-family: bold;
+}
+.main {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+  border: 20px;
+  background-color: rgba(0, 0, 0, 0.994);
+  align-content: center;
+}
+.head {
+  font-size: 100px;
+  position: relative;
+  font-family: bold;
+  color: white;
+}
+.main p {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  width: 75%;
+  position: relative;
+  top: 100px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+.liscence {
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  top: 240px;
+  text-align: center;
+}
+.links {
+  margin: auto;
+  position: relative;
+  left: 730px;
+  top: 250px;
+}
+.email {
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+.insta img {
+  width: 30px;
+}
+.yt img {
+  width: 30px;
+}

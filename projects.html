@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADR Format - Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navabar">
+      <a href=""><img class="lg" src="ADR-removebg-preview.png" alt="" /></a>
+      <ul class="menu">
+        <a href="" class="menuicon">About Us</a>
+        <a href="" class="menuicon">Projects</a>
+        <a href="" class="menuicon">Contact Us</a>
+      </ul>
+    </div>
+
+    <div
+      class="container"
+      data-0="transform:translateX(0%);"
+      data-1000="transform:translateX(-200%);"
+    >
+      <section class="first">
+        <div class="content ">
+          <div class="vid" id="a">
+            <video autoplay class="avid" src="videoplayback.mp4" muted></video>
+          </div>
+        </div>
+      </section>
+      <section class="second">
+        <div class="content">
+          <div class="vid" id="b">
+            <video
+              id="bvid"
+              onmouseover="this.play()"
+              onmouseout="this.pause();this.currentTime=0;"
+              muted
+              src="videoplayback (1).mp4"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section class="third">
+        <div class="content">
+          <div class="vid" id="c">
+            <video
+              id="cvid"
+              onmouseover="this.play()"
+              onmouseout="this.pause();this.currentTime=0;"
+              muted
+              src="videoplayback (2).mp4"
+            ></video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="skrollr/skrollr.js"></script>
+    <script type="text/javascript" >
+      var s = skrollr.init();
+
+      const a = document.querySelector("#a");
+      const avid = a.firstElementChild;
+
+      // console.log(amute);
+      function amutefunc() {
+        console.log("yesssss");
+        avid.muted = !avid.muted;
+      }
+    </script>
+  </body>
+</html>
